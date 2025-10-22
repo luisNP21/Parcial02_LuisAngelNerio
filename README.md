@@ -5,11 +5,11 @@
 
 # Microservicio de Calculo Factorial
 
-Este proyecto implementa un microservicio en Flask que recibe un numero por URL y devuelve una respuesta JSON con:
+Este proyecto implementa un microservicio en flask que recibe un numero por URL y devuelve una respuesta json con:
 
 - El numero recibido  
 - Su factorial  
-- Una etiqueta "par" o "impar" segun el resultado del factorial  
+- Una etiqueta par o impar segun el resultado del factorial  
 
 Ejemplo de respuesta:
 ```json
@@ -90,4 +90,4 @@ Si el microsevicio debe comunicarse con otro el segundo microservicio que reciba
 base de datos, el servicio principal manda los datos del numero mediante la peticion POST esto para poder mantener la independencia de los dos, cada uno
 ejecutando su contenedor perimitiendo que la arquitectura sea modular y los datos persistentes aun que el sistema se reinicie 
 
-En otras palabras uno calcula los resultados el otro realiza las peticiones y guarda en la base de datos 
+En otras palabras uno calcula los resultados el otro realiza las peticiones y guarda en la base de datos.
